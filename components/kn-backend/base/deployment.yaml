@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: kn-backend
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads-stage/ldary24-tenant/kn-backend/kn-backend@sha256:73999eb06dc3fd31df1e3698c8c2f43ee92da7a13493ee80c918e54e1a7f5304
         imagePullPolicy: Always
         name: container-image
         ports:
