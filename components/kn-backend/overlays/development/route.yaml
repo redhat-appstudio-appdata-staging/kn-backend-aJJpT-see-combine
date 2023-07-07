@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: kn-backend
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: kn-backend
+    app.kubernetes.io/part-of: kn-backend
+  name: kn-backendd6xs
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: kn-backend
+    weight: 100
+status: {}
