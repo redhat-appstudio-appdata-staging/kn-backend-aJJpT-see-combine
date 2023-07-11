@@ -4,7 +4,6 @@ metadata:
   creationTimestamp: null
   name: kn-backend
 spec:
-  replicas: 1
   selector: {}
   strategy: {}
   template:
