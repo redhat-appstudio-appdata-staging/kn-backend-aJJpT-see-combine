@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: kn-backend
     app.kubernetes.io/part-of: kn-backend
-  name: kn-backend5fk1
+  name: kn-backendagl3
 spec:
   port:
     targetPort: 8080
